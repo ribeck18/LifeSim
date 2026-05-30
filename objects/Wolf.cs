@@ -77,25 +77,25 @@ public class Wolf: IMapMember, IMoveable, ILiving
 			var n3 = (x: current.x, y: current.y+1);
 			var n4 = (x: current.x, y: current.y-1);
 
-			if (map.CheckLocationInBounds(n1) && map.CheckSpotTaken(n1) == false)
+			if (!visited.Contains(n1) && map.CheckLocationInBounds(n1) && !map.CheckSpotTaken(n1))
 			{
 				pathsDict[n1] = current;
 				queue.Enqueue(n1);
 				visited.Add(n1);
 			}
-			if (map.CheckLocationInBounds(n2) && map.CheckSpotTaken(n2) == false)
+			if (!visited.Contains(n2) && map.CheckLocationInBounds(n2) && !map.CheckSpotTaken(n2))
 			{
 				pathsDict[n2] = current;
 				queue.Enqueue(n2);
 				visited.Add(n2);
 			}
-			if (map.CheckLocationInBounds(n3) && map.CheckSpotTaken(n3) == false)
+			if (!visited.Contains(n3) && map.CheckLocationInBounds(n3) && !map.CheckSpotTaken(n3))
 			{
 				pathsDict[n3] = current;
 				queue.Enqueue(n3);
 				visited.Add(n3);
 			}
-			if (map.CheckLocationInBounds(n4) && map.CheckSpotTaken(n4) == false)
+			if (!visited.Contains(n4) && map.CheckLocationInBounds(n4) && !map.CheckSpotTaken(n4))
 			{
 				pathsDict[n4] = current;
 				queue.Enqueue(n4);
@@ -118,6 +118,8 @@ public class Wolf: IMapMember, IMoveable, ILiving
 		}
 		path.Reverse();
 
+		_currentPath = path;
+		_currentStep = 0;
 		return path;
 	}
 
@@ -132,6 +134,8 @@ public class Wolf: IMapMember, IMoveable, ILiving
 		map.MapArray[CurrentLocation.x, CurrentLocation.y] = map.Dirt;
 		map.MapArray[step.x, step.y] = Apperance;
 		CurrentLocation = step;
+
+		_currentStep++;
 	}
 
 	public void GoToNearest(Map map)

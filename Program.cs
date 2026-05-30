@@ -1,4 +1,5 @@
-﻿Map map = new Map();
+﻿Sim sim = new Sim();
+Map map = new Map();
 List<ILiving> livingCreatures = [];
 List<IMoveable> moveableCreatures = [];
 bool gameRunning = true;
@@ -22,11 +23,17 @@ wolf.PlanPath(map, targets);
 //GameLoop
 while (gameRunning)
 {
+	sim.Tick();	
 	map.PrintMap();
 	foreach(IMoveable creature in moveableCreatures)
 	{
 		creature.ExecutePathStep(map);
 	}
 
-	gameRunning = false;
+	//for testing.
+	if (wolf.CurrentLocation == (19,22))
+	{
+		gameRunning = false;
+	}
+
 }

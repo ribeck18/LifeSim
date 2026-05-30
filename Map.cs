@@ -56,6 +56,10 @@ public class Map
 		{
 			return false;
 		}
+		if (location.x < 0 || location.y < 0)
+		{
+			return false;
+		}
 
 		return true;
 	}
