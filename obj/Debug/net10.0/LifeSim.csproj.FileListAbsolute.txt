@@ -1,0 +1,15 @@
+/Users/rileybeck/projects/LifeSim/bin/Debug/net10.0/LifeSim
+/Users/rileybeck/projects/LifeSim/bin/Debug/net10.0/LifeSim.deps.json
+/Users/rileybeck/projects/LifeSim/bin/Debug/net10.0/LifeSim.runtimeconfig.json
+/Users/rileybeck/projects/LifeSim/bin/Debug/net10.0/LifeSim.dll
+/Users/rileybeck/projects/LifeSim/bin/Debug/net10.0/LifeSim.pdb
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/LifeSim.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/LifeSim.AssemblyInfoInputs.cache
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/LifeSim.AssemblyInfo.cs
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/LifeSim.csproj.CoreCompileInputs.cache
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/LifeSim.sourcelink.json
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/LifeSim.dll
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/refint/LifeSim.dll
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/LifeSim.pdb
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/LifeSim.genruntimeconfig.cache
+/Users/rileybeck/projects/LifeSim/obj/Debug/net10.0/ref/LifeSim.dll
